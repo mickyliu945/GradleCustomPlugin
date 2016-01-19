@@ -1,0 +1,20 @@
+buildscript {
+	repositories {
+		maven {
+			url uri('../repo')
+		}
+	}
+
+	dependencies {
+		classpath group: 'com.micky',
+			name: 'gradle-micky',
+			version: '1.0.2'
+	}
+}
+
+apply plugin: 'com.micky.mycustom'
+
+myArgs {
+	sender='Micky Liu'
+	message='Gradle is so simple.'
+}
