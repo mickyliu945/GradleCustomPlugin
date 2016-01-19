@@ -1,0 +1,15 @@
+buildscript {
+	repositories {
+		maven {
+			url uri('../repo')
+		}
+	}
+
+	dependencies {
+		classpath group: 'com.micky',
+			name: 'gradle-micky',
+			version: '1.0.1'
+	}
+}
+
+apply plugin: 'com.micky.mycustom'
